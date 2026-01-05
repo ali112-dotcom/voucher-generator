@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5 maximum-scale=0.5, user-scalable=no">
+    <title>Voucher Narration Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <h1>
+        Welcome to<br>
+        <span class="m_title">AL-A'ARF MISSION</span>
+    </h1>
+
+    <p class="subtitle">
+        This tool generates voucher narrations for accounting software
+    </p>
+
+    <div class="generator">
+
+        <div class="field">
+            <label for="account">
+                Account Head <span class="bengali">(অ্যাকাউন্ট হেড)</span>
+            </label>
+            <select id="account">
+                <option value="">-- Select Account Head --</option>
+                <option value="Loans ( Liability )">Donation Received</option>
+                <option value="Azizul Haque Mondal">Azizul Haque Mondal</option>
+                <option value="Fees from students">Fees from students</option>
+                <option value="Re-Admission Fee">Re-Admission Fee</option>
+                <option value="Admission Fee">Admission Fee</option>
+                <option value="Student Hostel Fee">Student Hostel Fee</option>
+                <option value="Fee for late payment">Fee for late payment</option>
+                <option value="Other Receipts">Other Receipts</option>
+                <option value="Meal Charges">Meal Charges</option>
+                <option value="zakat / Donation">zakat / Donation</option>
+                <option value="Postage & Revenue">Postage & Revenue</option>
+                <option value="Educational Expenses for Students Hostel">Educational Expenses for Students Hostel</option>
+                <option value="fees return">Fees Return</option>
+                <option value="Rice">Rice</option>
+                <option value="Egg">Egg</option>
+                <option value="Fish">Fish</option>
+                <option value="Meat">Meat</option>
+                <option value="Potato">Potato</option>
+                <option value="Fuel for Cooking">Fuel for Cooking</option>
+                <option value="Grocery">Grocery</option>
+                <option value="Tiffin & Meal">Tiffin & Meal</option>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Water">Water</option>
+                <option value="Books & Periodicals">Books & Periodicals</option>
+                <option value="Electricity Charges">Electricity Charges</option>
+                <option value="Printing & Stationery">Printing & Stationery</option>
+                <option value="Telephone & Internet Charges">Telephone & Internet Charges</option>
+                <option value="Travelling & Conveyance">Travelling & Conveyance</option>
+                <option value="R&M - Aquaguard">R&M - Aquaguard</option>
+                <option value="R&M - Water Pump">R&M - Water Pump</option>
+                <option value="R&M - Computer">R&M - Computer</option>
+                <option value="R&M - Electrical Equipment">R&M - Electrical Equipment</option>
+                <option value="R&M - Motorcycle">R&M - Motorcycle</option>
+                <option value="R&M - Others">R&M - Others</option>
+                <option value="Educational Expenses">Educational Expenses</option>
+                <option value="Function Expenses">Function Expenses</option>
+                <option value="Hiring Charges">Hiring Charges</option>
+                <option value="Sports Expenses">Sports Expenses</option>
+                <option value="Labour Charges">Labour Charges</option>
+                <option value="Fuel for Motorcycle">Fuel for Motorcycle</option>
+                <option value="Fuel for Generator">Fuel for Generator</option>
+                <option value="R&M - Fan">R&M - Fan</option>
+                <option value="House rent">House rent</option>
+                <option value="Miscellaneous Expenses">Miscellaneous Expenses</option>
+                <option value="Cartage & Carrying Charges">Cartage & Carrying Charges</option>
+                <option value="Misc. Expenses">Misc. Expenses</option>
+                <option value="Fixed Assets">Fixed Assets</option>
+                <option value="Computer & Programming">Computer & Programming</option>
+                <option value="Electrical Equipment">Electrical Equipment</option>
+                <option value="Fan">Fan</option>
+                <option value="Furniture & Fittings">Furniture & Fittings</option>
+                <option value="Building Renovation">Building Renovation</option>
+                <option value="Sanitation & Plumbing">Sanitation & Plumbing</option>
+                <option value="Sundry Assets">Sundry Assets</option>
+                <option value="Utensil">Utensil</option>
+                <option value="Bedding">Bedding</option>                
+                <option value="House rent">House rent</option>
+                <option value="Security Agency">Security Agency</option>
+                <option value="Medical Expences">Medical Expences</option>
+                <option value="Stipend Payable">Stipend Payable</option>
+                
+            </select>
+        </div>
+
+        <div class="field">
+            <label for="name">
+                Pay To <span class="bengali">(প্রাপকের নাম)</span>
+            </label>
+            <input type="text" id="name" placeholder="Enter Payee Name">
+        </div>
+
+    </div>
+
+    <div class="narration-box">
+        <h3>Your Voucher Narration</h3>
+        <p id="narration">Please select account head</p>
+        <button id="copyBtn">Copy Narration</button>
+    </div>
+
+    <!-- ✅ Correct way to load JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
 
